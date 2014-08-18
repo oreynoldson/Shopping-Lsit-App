@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css"
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="canvas">
@@ -21,15 +22,16 @@
 			<div class="intro">
 				<h2>Instructions</h2>
 				<p>Type in the item you want to add to the list, select the quantity then click add</p>
-				<p>To check off an item on the lsit click on it once or click the green tick.  To remove an item completely doubble click the item or click the red cross</p>
+				<p>To check off an item on the lsit doubbleclick on it or click the green tick.  To remove an item completely doubble click the item or click the red cross</p>
 				<p>To reorder the list click on the item an drag it to a new location</p>
 			</div>
 			<div class="inputArea">
-				<input class="itemInput" type="text" name="inputArea">
-				<input class="itemQuant" type="number" name="quantity">
+				<input class="itemInput" type="text" name="inputArea" placeholder="Enter an item you would like to add to your list">
+				<input class="itemQuant" type="number" name="quantity" value="1">
 				<button class="quantBtn" name="plus">+</button>
 				<button class="quantBtn" name="minus">-</button>
-				<button class="itemAdd" name="sumbit">Add To list</button>
+				<button class="itemAdd" name="sumbit">Add</button>
+				<button class="removeAll" name="removeAll">Remove All</button>
 			</div>
 			<ul class="list">
 				<li class="item">
