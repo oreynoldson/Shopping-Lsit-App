@@ -112,6 +112,10 @@ header{
 	height: 40px;
 	border-radius: 5px;
 	font-family: 'Open Sans', sans-serif;
+	margin-left:10px;
+	-webkit-box-shadow: 6px 4px 14px 2px rgba(26,26,24,0.75);
+	-moz-box-shadow: 6px 4px 14px 2px rgba(26,26,24,0.75);
+	box-shadow: 6px 4px 14px 2px rgba(26,26,24,0.75);
 }
 
 .inputArea input:hover, button:hover{
@@ -133,12 +137,12 @@ header{
 	outline: none;
 }
 
-.itemInput{
+#itemInput{
 	width: 400px;
 }
 
-.itemQuant{
-	width: 60px;
+#itemQuant{
+	width: 40px;
 }
 
 .quantBtn{
@@ -149,19 +153,19 @@ header{
 
 .itemAdd{
 	width: 100px;
-	font-size: 1.50em;
+	font-size: 1.25em;
 }
 
-.removeAll{
+#removeAll{
 	width: 150px;
-	font-size: 1.50em;
+	font-size: 1.25em;
 }
 
 /**************************
 	BOTTOM OF PAGE
 ***************************/
 
-.list{
+#list{
 	/*outline: solid 2px coral;*/
 	display: inline-block; /*Prevents margin collapse on list item*/
 	width: 100%;
@@ -169,14 +173,13 @@ header{
 	margin-top: 20px;
 }
 
-.item{
+.items{
 /*	outline: solid 2px lightblue;*/
 	width: 600px;
 	height: 60px;
 	display: block;
 	margin: 20px auto;
 	position: relative;
-	color: #8c92ac;
 }
 
 .tickCross{
@@ -217,18 +220,30 @@ header{
 	height: 60px;
 	padding: 10px 10px 10px 20px;
 	font-size: 1.875em;
+	color: #8c92ac;
+	-webkit-box-shadow: 8px 6px 10px 2px rgba(26,26,24,0.75);
+	-moz-box-shadow: 8px 6px 10px 2px rgba(26,26,24,0.75);
+	box-shadow: 8px 6px 10px 2px rgba(26,26,24,0.75);
 }
 
-.itemAdded:hover{
+.itemAddedContain:hover{
 	cursor: pointer;
 }
 
+/**************************
+	JAVASCRIPT ADDED CLASSES
+***************************/
+
+.strikeItem{
+	text-decoration: line-through;
+	/*background-color: red;*/
+}
+
 .gotIt{
-	/*outline: solid 2px brown;*/
 	display: none;
 	position: absolute;
 	top: 10px;
-	left: 515px;
+	left: 525px;
 	height: 40px;
 	width: 60px;
 	background-color: #ed4c4c;
@@ -236,17 +251,20 @@ header{
 	font-size: 19px;
 	border-radius: 5px;
 	padding: 10px 4px 10px 4px;
+	-webkit-box-shadow: 6px 4px 14px 2px rgba(26,26,24,0.75);
+	-moz-box-shadow: 6px 4px 14px 2px rgba(26,26,24,0.75);
+	box-shadow: 6px 4px 14px 2px rgba(26,26,24,0.75);
 }
 
-/*Example of when the item is clicked on to be moved wthin the list*/
-ul li:nth-child(2n) .itemAdded{
+/*Example of when the item is clicked on to be moved wthin the list
+ul li:nth-child(2n) .itemAddedContain{
 	background-color: #8c92ac;
 	color: #FFA500;
 }
 
 /*Example of the item when it is doubble clicked to be checked off,
 Also should now show the checked icon at the side*/
-ul li:nth-child(3n) .itemAdded{
+ul li:nth-child(3n) .itemAddedContain{
 	background-color: #8c92ac;
 	color: #FFA500;
 	text-decoration: line-through;
