@@ -1,10 +1,10 @@
 $(document).ready(function(){
-
+		
 			
 	//Take input and adds it to the list
 	$("#itemAdd").on("click", function(){
 		//gets user input
-		var userInput = document.getElementById("itemInput").value;
+		var itemEntered = document.getElementById("itemInput").value;
 		//gets user quantity 
 		var userQuant = document.getElementById("itemQuant").value;
 		//holds the html and style for each list item
@@ -14,7 +14,7 @@ $(document).ready(function(){
 					+	'<div id ="clear_Item" class="icon-cancel-circle"></div>'
 				+	'</div>'
 				+	'<div class="itemAddedContain">'
-					+	'<p class="itemAdded">'+ userInput + "            x  " + userQuant +'</p>'
+					+	'<p class="itemAdded">'+ itemEntered + "            x  " + userQuant +'</p>'
 				+	'</div>'
 				+	'<div class="gotIt">'
 				+		'<span>Got It</span>'
@@ -42,8 +42,10 @@ $(document).ready(function(){
 	$("#list").on("click", "#clear_Item", function(){
 		$(this).closest(".items").remove();
 	});
-
+	
  });//end of doc ready
+
+	 
 
 
 //Create a counter to add quantity
@@ -61,4 +63,11 @@ $(document).ready(function(){
 	//make the function return the new quantity
 	return newQty;
 	} //end of count func
+
+	
+
+	
+	
+		
+
 

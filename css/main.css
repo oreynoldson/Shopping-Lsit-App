@@ -65,6 +65,7 @@ header{
 	color: #FFA500;
 	background-color: #8c92ac;
 	border-radius: 10px;
+	text-align: center;
 }
 
 .intro{
@@ -139,6 +140,7 @@ header{
 
 #itemInput{
 	width: 400px;
+	padding-left: 10px;
 }
 
 #itemQuant{
